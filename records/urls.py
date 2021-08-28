@@ -23,3 +23,4 @@ urlpatterns = [
 ]
 
 handlers404 = 'records.views.handlers404'
+handler500 = 'records.views.this_server_error'
