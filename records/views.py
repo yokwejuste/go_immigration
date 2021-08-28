@@ -185,3 +185,7 @@ def send_files_3(request):
         context['document_form'] = form
 
     return render(request, 'files_3.html', context)
+
+
+def this_server_error(request, template_name='500.html'):
+    return render(request, template_name, {})
