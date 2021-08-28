@@ -1,5 +1,9 @@
 Django~=3.2.6
 Pillow~=7.0.0
 django-user-visit~=0.4.1
-gunicorn
-whitenoise
+gunicorn~=20.1.0
+whitenoise~=5.3.0
+asgiref~=3.4.1
+sqlparse~=0.4.1
+pytz~=2021.1
+django-bootstrap4~=3.0.1
