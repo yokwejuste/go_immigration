@@ -16,8 +16,10 @@ Including another URLconf
 from django.conf.urls import url
 from django.conf.urls.static import static
 from django.contrib import admin
+from django.contrib.staticfiles.storage import staticfiles_storage
 from django.contrib.staticfiles.views import serve
 from django.urls import path, include
+from django.views.generic.base import RedirectView
 
 from go_immigration import settings
 
@@ -30,4 +32,8 @@ urlpatterns = [
                   path('', include('records.urls')),
                   url(r'^media/(?P<path>.*)$', serve, {'document_root': settings.MEDIA_ROOT}),
                   url(r'^static/(?P<path>.*)$', serve, {'document_root': settings.STATIC_ROOT}),
+                  path(
+                      "favicon.ico",
+                      RedirectView.as_view(url=staticfiles_storage.url("favicon.ico")),
+                  ),
               ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
