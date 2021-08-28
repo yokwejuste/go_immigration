@@ -5,6 +5,7 @@ from records.views import register, login_go_user, \
     profile, records, send_files_1, preview, send_files_2, send_files_3  # ,h404
 
 urlpatterns = [
+    path('', register, name='register'),
     path('register', register, name='register'),
     path('login', login_go_user, name='login'),
     path('logout', logout_go_user, name='logout'),
