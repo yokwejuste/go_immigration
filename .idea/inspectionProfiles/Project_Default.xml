@@ -1,0 +1,53 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="CssUnknownProperty" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="myCustomPropertiesEnabled" value="true" />
+      <option name="myIgnoreVendorSpecificProperties" value="false" />
+      <option name="myCustomPropertiesList">
+        <value>
+          <list size="10">
+            <item index="0" class="java.lang.String" itemvalue="justify-content" />
+            <item index="1" class="java.lang.String" itemvalue="align-items" />
+            <item index="2" class="java.lang.String" itemvalue="align-self" />
+            <item index="3" class="java.lang.String" itemvalue="flex-item-align" />
+            <item index="4" class="java.lang.String" itemvalue="flex-grow" />
+            <item index="5" class="java.lang.String" itemvalue="flex-positive" />
+            <item index="6" class="java.lang.String" itemvalue="flex-wrap" />
+            <item index="7" class="java.lang.String" itemvalue="flex-direction" />
+            <item index="8" class="java.lang.String" itemvalue="filter" />
+            <item index="9" class="java.lang.String" itemvalue="-pdf-frame-content" />
+          </list>
+        </value>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="DuplicatedCode" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
+    <inspection_tool class="HtmlUnknownTag" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="myValues">
+        <value>
+          <list size="9">
+            <item index="0" class="java.lang.String" itemvalue="nobr" />
+            <item index="1" class="java.lang.String" itemvalue="noembed" />
+            <item index="2" class="java.lang.String" itemvalue="comment" />
+            <item index="3" class="java.lang.String" itemvalue="noscript" />
+            <item index="4" class="java.lang.String" itemvalue="embed" />
+            <item index="5" class="java.lang.String" itemvalue="script" />
+            <item index="6" class="java.lang.String" itemvalue="h3" />
+            <item index="7" class="java.lang.String" itemvalue="effective" />
+            <item index="8" class="java.lang.String" itemvalue="div" />
+          </list>
+        </value>
+      </option>
+      <option name="myCustomValuesEnabled" value="true" />
+    </inspection_tool>
+    <inspection_tool class="PyPep8NamingInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <option name="ignoredErrors">
+        <list>
+          <option value="N802" />
+          <option value="N806" />
+          <option value="N803" />
+        </list>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+{% load static %}
+{% csrf_token %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Preview</title>
+</head>
+<body>
+{% if document %}
+    {% for document in document %}
+    {% endfor %}
+{% endif %}
+</body>
+</html>

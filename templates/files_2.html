@@ -1,0 +1,44 @@
+{% load static %}
+{% csrf_token %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Upload Files</title>
+    <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+</head>
+<body>
+<div class="container">
+    <div class="card shadow-lg o-hidden border-0 my-3">
+        <div class="card-body p-0">
+            <div class="col-lg-7 m-0">
+                <div class="p-5">
+                    <h1>Hey {{ request.user.username }}, register
+                        a new customer</h1>
+                    <div id="container">
+                        <div>
+                            <span>{{ request.user.username }}</span>
+                            <span id="text"></span>
+                            <span id="cursor"></span>
+                        </div>
+                    </div>
+
+                    <div class="form-container">
+                        <form class="user" enctype='multipart/form-data' method="POST"
+                              action="{% url 'upload_t' %}">
+                            {% csrf_token %}
+                            {{ document_form }}
+                            <input class="btn btn-secondary d - block btn - user w - 100"
+                                   type="submit">
+                        </form>
+
+                        <br>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="{% static 'js/main.js' %}"></script>
+</body>
+</html>
