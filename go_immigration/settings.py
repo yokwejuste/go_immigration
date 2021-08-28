@@ -136,4 +136,4 @@ STATICFILES_DIRS = [
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-STATIC_ROOT = '/home/yokwejuste/PycharmProjects/DjangoProjects/Internship/go_immigration/'
+STATIC_ROOT = "/home/yokwejuste/PycharmProjects/DjangoProjects/Internship/go_immigration/static/records"
